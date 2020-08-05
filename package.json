@@ -1,0 +1,44 @@
+{
+  "name": "blog-dashboard",
+  "version": "1.0.0",
+  "description": "Moamen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moamen-ragab/blog-dashboard.git"
+  },
+  "keywords": [
+    "Blog",
+    "Dashboard"
+  ],
+  "author": "Moamen Ragab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moamen-ragab/blog-dashboard/issues"
+  },
+  "homepage": "https://github.com/moamen-ragab/blog-dashboard#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.5.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6",
+    "static-server": "^2.2.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
+}
