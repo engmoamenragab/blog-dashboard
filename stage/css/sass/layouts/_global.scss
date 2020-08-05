@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   .content-area {
     width: calc(100% - 250px);
-    min-height: 100%;
+    min-height: 100vh;
     float: right;
     transition: .3s;
     -webkit-transition: .3s;
@@ -17,6 +17,7 @@ body {
     -ms-transition: .3s;
     -o-transition: .3s;
     will-change: width;
+    background-color: #f4f4f4;
     &.no-sidebar {
       width: 100%;
     }
