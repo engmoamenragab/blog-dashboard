@@ -7,11 +7,13 @@ var gulp = require("gulp"),
   livereload = require("gulp-livereload"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify"),
-  rename = require("gulp-rename");
+  rename = require("gulp-rename"),
+  plumber = require("gulp-plumber");
 
 // HTML Task
 gulp.task("html", function () {
   return gulp.src("stage/html/*.pug")
+    .pipe(plumber())
     .pipe(pug({ pretty: true }))
     .pipe(concat("main.html"))
     .pipe(rename("index.html"))
@@ -22,6 +24,7 @@ gulp.task("html", function () {
 // CSS Task
 gulp.task("css", function () {
   return gulp.src(["stage/css/**/*.css", "stage/css/**/*.scss"])
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer())
@@ -34,6 +37,7 @@ gulp.task("css", function () {
 // JS Task
 gulp.task("js", function () {
   return gulp.src("stage/js/*.js")
+    .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(minify())
     .pipe(gulp.dest("dist/js"))
