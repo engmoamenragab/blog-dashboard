@@ -9,16 +9,12 @@
     color: #FFF;
     padding: 15px;
     transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
     &.no-sidebar {
       left: -250px;
     }
     .logo-area { 
       font-weight: bold;
-      font-size: 26px;
+      font-size: 2rem;
       margin-bottom: 30px;
     }
     .links-area {
@@ -52,15 +48,7 @@
           height: 10px;
           border: 2px solid #FFF;
           border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
           transform: translateY(50%);
-          -webkit-transform: translateY(50%);
-          -moz-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-          -o-transform: translateY(50%);
         }
         &:hover {
           padding-left: 25px;
@@ -70,16 +58,8 @@
           position: relative;
           top: 5px;
           transition: .3s;
-          -webkit-transition: .3s;
-          -moz-transition: .3s;
-          -ms-transition: .3s;
-          -o-transition: .3s;
           &.down {
             transform: rotate(90deg);
-            -webkit-transform: rotate(90deg);
-            -moz-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            -o-transform: rotate(90deg);
           }
         }
       }
